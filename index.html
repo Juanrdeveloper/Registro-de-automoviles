@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Automóviles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registro de Automóviles</h1>
+    <form id="vehicleForm">
+        <input type="text" id="plate" placeholder="Placa (Ej: ABC1234)" required>
+        <input type="text" id="model" placeholder="Modelo" required>
+        <input type="text" id="driverName" placeholder="Nombre de Conductor" required>
+        <select id="vehicleType">
+            <option value="car">Carro</option>
+            <option value="motorcycle">Moto</option>
+        </select>
+        <input type="date" id="entryDate" required>
+        <input type="date" id="exitDate" required>
+        <input type="time" id="entryTime" required>
+        <input type="time" id="exitTime" required>
+        <input type="text" id="idNumber" placeholder="Cédula (Ej: 12345678)" required>
+        <input type="tel" id="phone" placeholder="Teléfono (Ej: 3001234567)" required>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Lista de Conductores</h2>
+    <table id="driverList">
+        <thead>
+            <tr>
+                <th>Placa</th>
+                <th>Modelo</th>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Fecha de Entrada</th>
+                <th>Fecha de Salida</th>
+                <th>Hora de Entrada</th>
+                <th>Hora de Salida</th>
+                <th>Cédula</th>
+                <th>Teléfono</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
